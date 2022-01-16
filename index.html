@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GNews Club</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+
+    <!-- header section  -->
+    <header>
+      <!-- screen >= 998px -->
+      <nav>
+        <div class="container">
+        <div class="navbar">
+          <div class="nav-menu">
+            <div class="nav-brand">
+              <a href="index.html"
+                ><img class="logo" src="images/logoG_2.png" alt="logo"
+              /></a>
+            </div>
+            <div class="nav-element">
+              <ul>
+                <li><a href="news.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="animation.html">Events</a></li>
+                <li><a href="about.html">About Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="nav-btn">
+            <div class="nav-search">
+              <div class="search-box">
+                <button class="btn-search">
+                  <i class="fas fa-search"></i>
+                </button>
+                <input
+                  type="text"
+                  class="input-search"
+                  placeholder="Type to search..."
+                />
+              </div>
+            </div>
+            <a class="button-btn-2"><i class="fab fa-google"></i>Sign In</a>
+          </div>
+        </div>
+      </div>
+      </nav>
+
+      <!-- screen <= 998px -->
+      <div class="navbar-mobile">
+        <div class="dropdown">
+          <div ><i onclick="myFunction()" class="dropbtn fas fa-bars"></i></div>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#signinwithgoogle"><i class="fab fa-google"></i>Sign In with Google</a>
+            <a href="#home"><i class="fas fa-home"></i>Home</a>
+            <a href="news.html"><i class="fas fa-newspaper"></i>News</a>
+            <a href="animation.html"><i class="fas fa-glass-cheers"></i>Events</a>
+            <a href="#contact"><i class="fas fa-address-card"></i>About Us</a>
+          </div>
+        </div>
+
+        <a href="index.html"><img class="logo" src="images/logoG_2.png" alt="logo"/></a>
+        
+        <div class="dropdownSearch">
+          <div><i onclick="myFunctionSearch()" class="dropbtn-search fas fa-search"></i></div>
+          <div id="myDropdownSearch" class="dropdown-search">
+            <div class="simple-search">
+              <input type="email" placeholder="Type to search..."/>
+              <button>Send</button>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="search-box">
+          <button class="btn-search">
+            <i class="fas fa-search"></i>
+          </button>
+          <input
+            type="text"
+            class="input-search"
+            placeholder="Type to search..."
+          />
+        </div> -->
+      </div>
+    </header>
+
+    <!-- body section  -->
+
+    <div class="body-section">
+      <!-- slide screen >= 998px -->
+      <div class="slide-mx">
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <img src="images/banner-1-web.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides fade">
+            <img src="images/banner-2-web.jpg" style="width:100%">
+          </div>
+        
+          <div class="dot-all" style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+          <div class="join-now">
+            <a>Tham gia ngay</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- slide screen <=998px -->
+      <div class="slide-mn">
+        <div class="slideshow-container">
+
+          <div class="mySlidesmn fade">
+            <img src="images/banner-1-phone.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlidesmn fade">
+            <img src="images/banner-2-phone.jpg" style="width:100%">
+          </div>
+        
+          <div class="dot-all" style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+          <div class="join-now">
+            <a>Tham gia ngay</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- Footer section -->
+    <footer>
+      <div class="footer">
+        <div class="copyright">
+          <p>© Greenwich Newspacer Club 2022</p>
+          <div class="social-icon">
+            <a href="https://www.facebook.com/gnewsclub.grevn"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/gnewsclub"><i class="fab fa-instagram"></i></i></a>
+            <a href="https://www.tiktok.com/@gnewsclub"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/channel/UCrIe5kGIfdv3CHNXbKksycQ"><i class="fab fa-youtube"></i></a>
+          </div>
+      </div>
+        <a class="button-btn-2">Support</a>
+      </div>
+    </footer>
+  </body>
+
+  <script src="scripts/scripts.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
+</html>
